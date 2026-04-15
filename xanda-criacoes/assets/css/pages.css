@@ -409,3 +409,60 @@
   border-color: var(--borda);
   margin: 40px 0;
 }
+
+/* =========================================================
+   XANDA CRIAÇÕES — Contato
+   ========================================================= */
+
+#contato {
+  background-color: var(--texto-muted);
+  padding: 80px;
+}
+
+.contato-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 2.8rem;
+  color: var(--texto-claro);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.contato-descricao {
+  font-size: 1.05rem;
+  color: var(--texto-escuro);
+  margin-bottom: 60px;
+  max-width: 480px;
+}
+
+.contato-formulario {
+  background-color: var(--fundo-suave);
+  padding: 80px;
+  border-radius: var(--raio-borda);
+}
+
+.formulario-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  color: var(--texto-escuro);
+  margin-bottom: 30px;
+}
+
+.contato-icone {
+  width: 60px;
+  height: 60px;
+}
+
+.btn-formulario {
+  background-color: var(--cor-destaque);
+  width: 200px;
+  color: var(--fundo-branco) !important;
+  border-radius: var(--raio-btn);
+  font-weight: 500;
+  margin-top: 30px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-formulario:hover {
+  background-color: var(--cor-padrao);
+  color: var(--fundo-branco) !important;
+}
