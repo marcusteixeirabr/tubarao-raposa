@@ -1,0 +1,156 @@
+/* ================================================
+   XANDA CRIAÇÕES — Estilos customizados
+   Paleta: Rosa & Madeira
+   ================================================ */
+
+:root {
+  /* --- Cores principais --- */
+  --cor-forte: #2c1a1a; /* Navbar, Footer, textos sobre fundo claro */
+  --cor-extra: #2c1a1ad7; /* Navbar, Footer, textos sobre fundo claro */
+  --cor-destaque: #c0614a; /* Botões CTA, destaques, hover */
+  --cor-padrao: #a0522d; /* Links, títulos de seção, ícones */
+  --cor-whatsapp: #25d366; /* Botão WhatsApp */
+  --cor-whatsapp-hover: #1ebd5a; /* Hover do botão WhatsApp */
+
+  /* --- Cores de fundo --- */
+  --fundo-suave: #fdf0eb; /* Background principal */
+  --fundo-card: #fefaf8; /* Cards de produto, seções alternadas */
+  --fundo-branco: #ffffff; /* Formulários, inputs */
+
+  /* --- Texto --- */
+  --texto-escuro: #2c1a1a; /* Títulos, texto principal */
+  --texto-medio: #7a3d2a; /* Subtítulos, parágrafos */
+  --texto-claro: #fdf0eb; /* Texto sobre fundos escuros */
+  --texto-muted: #b07860; /* Legendas, placeholders */
+
+  /* --- Bordas --- */
+  --borda: #e8c5b5; /* Bordas de cards, inputs, separadores */
+
+  /* --- Tipografia --- */
+  --fonte-titulo: "Georgia", serif; /* Títulos — elegância artesanal */
+  --fonte-corpo: "Segoe UI", sans-serif; /* Corpo — legibilidade */
+
+  /* --- Espaçamentos --- */
+  --raio-borda: 8px; /* border-radius padrão dos cards */
+  --raio-btn: 6px; /* border-radius dos botões */
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fundo-suave);
+  color: var(--texto-escuro);
+  font-family: var(--fonte-corpo);
+  line-height: 1.6;
+  min-height: 100vh; /* ← ocupa altura total da viewport */
+  display: flex; /* ← permite o footer grudar no fundo */
+  flex-direction: column; /* ← empilha navbar, conteúdo, footer */
+}
+
+main {
+  flex: 1; /* ← conteúdo principal cresce e empurra o footer */
+}
+
+/* --- Navbar --- */
+
+#navbar-principal {
+  background-color: var(--cor-forte);
+}
+
+.navbar-brand img {
+  filter: brightness(0) invert(1);
+  margin-right: 8px;
+}
+
+.btn-orcamento {
+  background-color: var(--cor-destaque);
+  color: var(--fundo-branco) !important;
+  border-radius: var(--raio-btn);
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-orcamento:hover {
+  background-color: var(--cor-padrao);
+  color: var(--fundo-branco) !important;
+}
+
+/* --- Links simples --- */
+.simple-link {
+  color: var(--cor-padrao);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.simple-link:hover {
+  color: var(--cor-destaque);
+}
+
+/* --- Botão WhatsApp --- */
+.btn-whatsapp {
+  background-color: var(--cor-whatsapp);
+  color: var(--fundo-branco) !important;
+  padding: 12px 28px;
+  border-radius: var(--raio-btn);
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--cor-whatsapp-hover);
+}
+
+/* --- Footer --- */
+#footer {
+  background-color: var(--cor-forte);
+  font-family: var(--fonte-corpo);
+  padding: 80px 0 10px 0;
+}
+
+.footer-titulo {
+  color: var(--texto-claro);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-descricao {
+  color: var(--texto-muted);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.footer-link {
+  color: var(--texto-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--cor-destaque);
+}
+
+.divisor-footer {
+  width: 100%;
+  border-color: var(--cor-destaque) !important;
+  margin: 20px 0;
+}
+
+.footer-direitos {
+  color: var(--texto-muted);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
