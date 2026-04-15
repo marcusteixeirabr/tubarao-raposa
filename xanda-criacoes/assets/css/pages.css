@@ -1,85 +1,17 @@
-/* ================================================
-   XANDA CRIAÇÕES — Estilos customizados
-   Paleta: Rosa & Madeira
-   ================================================ */
-
-:root {
-  /* --- Cores principais --- */
-  --cor-cacau: #2c1a1a; /* Navbar, Footer, textos sobre fundo claro */
-  --cor-terracota: #c0614a; /* Botões CTA, destaques, hover */
-  --cor-siena: #a0522d; /* Links, títulos de seção, ícones */
-  --cor-whatsapp: #25d366; /* Botão WhatsApp */
-  --cor-whatsapp-hover: #1ebd5a; /* Hover do botão WhatsApp */
-
-  /* --- Cores de fundo --- */
-  --fundo-pessego: #fdf0eb; /* Background principal */
-  --fundo-card: #fefaf8; /* Cards de produto, seções alternadas */
-  --fundo-branco: #ffffff; /* Formulários, inputs */
-
-  /* --- Texto --- */
-  --texto-escuro: #2c1a1a; /* Títulos, texto principal */
-  --texto-medio: #7a3d2a; /* Subtítulos, parágrafos */
-  --texto-claro: #fdf0eb; /* Texto sobre fundos escuros */
-  --texto-muted: #b07860; /* Legendas, placeholders */
-
-  /* --- Bordas --- */
-  --borda: #e8c5b5; /* Bordas de cards, inputs, separadores */
-
-  /* --- Tipografia --- */
-  --fonte-titulo: "Georgia", serif; /* Títulos — elegância artesanal */
-  --fonte-corpo: "Segoe UI", sans-serif; /* Corpo — legibilidade */
-
-  /* --- Espaçamentos --- */
-  --raio-borda: 8px; /* border-radius padrão dos cards */
-  --raio-btn: 6px; /* border-radius dos botões */
-}
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--fundo-pessego);
-  color: var(--texto-escuro);
-  font-family: var(--fonte-corpo);
-  line-height: 1.6;
-}
-
-#navbar-principal {
-  background-color: var(--cor-cacau);
-}
-
-.navbar-brand img {
-  filter: brightness(0) invert(1);
-  margin-right: 8px;
-}
-
-.btn-orcamento {
-  background-color: var(--cor-terracota);
-  color: var(--fundo-branco) !important;
-  border-radius: var(--raio-btn);
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
-
-.btn-orcamento:hover {
-  background-color: var(--cor-siena);
-  color: var(--fundo-branco) !important;
-}
+/* =========================================================
+   XANDA CRIAÇÕES — Homepage
+   ========================================================= */
 
 /* --- Hero --- */
 #hero {
-  background-color: var(--fundo-pessego);
+  background-color: var(--fundo-suave);
   padding: 80px 0;
 }
 
 .hero-subtitulo {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--cor-terracota);
+  color: var(--cor-destaque);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
@@ -107,7 +39,7 @@ body {
 }
 
 .btn-hero-primario {
-  background-color: var(--cor-terracota);
+  background-color: var(--cor-destaque);
   color: var(--fundo-branco);
   border-radius: var(--raio-btn);
   padding: 12px 28px;
@@ -117,14 +49,14 @@ body {
 }
 
 .btn-hero-primario:hover {
-  background-color: var(--cor-siena);
+  background-color: var(--cor-padrao);
   color: var(--fundo-branco);
 }
 
 .btn-hero-secundario {
   background-color: transparent;
-  color: var(--cor-cacau);
-  border: 2px solid var(--cor-cacau);
+  color: var(--cor-forte);
+  border: 2px solid var(--cor-forte);
   border-radius: var(--raio-btn);
   padding: 12px 28px;
   font-weight: 500;
@@ -133,7 +65,7 @@ body {
 }
 
 .btn-hero-secundario:hover {
-  background-color: var(--cor-cacau);
+  background-color: var(--cor-forte);
   color: var(--texto-claro);
 }
 
@@ -176,10 +108,14 @@ body {
 .secao-subtitulo {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--cor-terracota);
+  color: var(--cor-destaque);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 4px;
+}
+
+.secao-subtitulo--inverso {
+  color: var(--texto-muted);
 }
 
 .secao-titulo {
@@ -189,16 +125,8 @@ body {
   margin-bottom: 0;
 }
 
-.link-ver-todos {
-  color: var(--cor-siena);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.link-ver-todos:hover {
-  color: var(--cor-terracota);
+.secao-titulo--inverso {
+  color: var(--texto-claro);
 }
 
 /* --- Cards de produto --- */
@@ -225,7 +153,7 @@ body {
 .card-categoria {
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--cor-terracota);
+  color: var(--cor-destaque);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 4px;
@@ -251,8 +179,8 @@ body {
 }
 
 .badge-produto {
-  background-color: var(--fundo-pessego);
-  color: var(--cor-siena);
+  background-color: var(--fundo-suave);
+  color: var(--cor-padrao);
   border: 1px solid var(--borda);
   border-radius: 4px;
   padding: 3px 10px;
@@ -263,23 +191,7 @@ body {
 /* --- Porque Escolher --- */
 #porque-escolher {
   padding: 80px 0;
-  background-color: var(--cor-cacau);
-}
-
-.secao-subtitulo-escuro {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--texto-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 4px;
-}
-
-.secao-titulo-escuro {
-  font-family: var(--fonte-titulo);
-  font-size: 2rem;
-  color: var(--texto-claro);
-  margin-bottom: 0;
+  background-color: var(--cor-forte);
 }
 
 .card-porque {
@@ -317,7 +229,7 @@ body {
 /* --- Como Funciona --- */
 #como-funciona {
   padding: 80px 0;
-  background-color: var(--fundo-pessego);
+  background-color: var(--fundo-suave);
 }
 
 .funciona-passo {
@@ -328,7 +240,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--cor-terracota);
+  background-color: var(--cor-destaque);
   color: var(--fundo-branco);
   font-size: 1rem;
   font-weight: 500;
@@ -341,7 +253,7 @@ body {
 .funciona-divisoria {
   width: 40px;
   height: 3px;
-  background-color: var(--cor-terracota);
+  background-color: var(--cor-destaque);
   border-radius: 2px;
   margin-bottom: 16px;
 }
@@ -372,30 +284,18 @@ body {
   margin-bottom: 0;
 }
 
-.link-instagram {
-  color: var(--cor-siena);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.link-instagram:hover {
-  color: var(--cor-terracota);
-}
-
-.instagram-link-foto {
-  display: block;
-  overflow: hidden;
-  border-radius: var(--raio-borda);
-}
-
 .instagram-foto {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
+}
+
+.instagram-link-foto {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--raio-borda);
 }
 
 .instagram-link-foto:hover .instagram-foto {
@@ -406,7 +306,7 @@ body {
 
 #call-to-action {
   padding: 80px 0;
-  background-color: var(--fundo-pessego);
+  background-color: var(--fundo-suave);
   text-align: center;
 }
 
@@ -424,63 +324,88 @@ body {
   margin-bottom: 60px;
 }
 
-.btn-whatsapp {
-  background-color: var(--cor-whatsapp);
-  color: var(--fundo-branco) !important;
-  padding: 12px 28px;
-  border-radius: var(--raio-btn);
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.2s ease;
+/* =========================================================
+   XANDA CRIAÇÕES — Produtos
+   ========================================================= */
+
+/* --- Breadcrumb --- */
+#breadcrumb {
+  background-color: var(--cor-extra);
+  padding: 12px 0;
 }
 
-.btn-whatsapp:hover {
-  background-color: var(--cor-whatsapp-hover);
+.breadcrumb-xanda .breadcrumb-item {
+  font-size: 0.9rem;
 }
 
-/* --- Footer --- */
-#footer {
-  background-color: var(--cor-cacau);
-  font-family: var(--fonte-corpo);
-  padding: 80px 0 10px 0;
+.breadcrumb-xanda .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--texto-muted); /* cor do divisor > */
 }
 
-.footer-titulo {
+.breadcrumb-xanda .breadcrumb-item.active {
   color: var(--texto-claro);
-  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.breadcrumb-xanda .simple-link {
+  color: var(--texto-muted);
+}
+
+.breadcrumb-xanda .simple-link:hover {
+  color: var(--texto-claro);
+}
+
+/* Cabeçalho da página */
+#produtos-header {
+  background-color: var(--texto-muted);
+  padding: 60px 0 40px;
+}
+
+.pagina-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 2.5rem;
+  color: var(--texto-escuro);
+  margin-bottom: 12px;
+}
+
+.pagina-descricao {
+  font-size: 1rem;
+  color: var(--texto-claro);
+  max-width: 520px;
+}
+
+/* Grid de produtos */
+#produtos {
+  padding: 60px 0;
+  background-color: var(--fundo-card);
+}
+
+.produto-imagem {
+  border-radius: var(--raio-borda);
+  width: 100%;
+  object-fit: cover;
+  max-height: 360px;
+}
+
+.produto-detalhe {
+  padding: 8px 0;
+}
+
+.produto-nome {
+  font-family: var(--fonte-titulo);
+  font-size: 1.6rem;
+  color: var(--texto-escuro);
+  margin-bottom: 12px;
+}
+
+.produto-descricao {
+  font-size: 0.95rem;
+  color: var(--texto-medio);
+  line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.footer-descricao {
-  color: var(--texto-muted);
-  font-size: 0.95rem;
-  margin-bottom: 30px;
-  max-width: 400px;
-}
-
-.footer-link {
-  color: var(--texto-muted);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.footer-link:hover {
-  color: var(--cor-terracota);
-}
-
-.divisor-footer {
-  width: 100%;
-  border-color: var(--cor-terracota) !important;
-  margin: 20px 0;
-}
-
-.footer-direitos {
-  color: var(--texto-muted);
-  font-size: 0.9rem;
-  margin-top: 10px;
+.divisor-produto {
+  border-color: var(--borda);
+  margin: 40px 0;
 }
