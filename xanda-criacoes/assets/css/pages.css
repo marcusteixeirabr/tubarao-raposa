@@ -542,9 +542,9 @@
 @media (max-width: 767px) {
   #contato {
     background: linear-gradient(
-      to right,
-      var(--cor-forte) 50%,
-      var(--fundo-card) 50%
+      to bottom,
+      var(--cor-forte) 45%,
+      var(--fundo-card) 45%
     );
   }
 
