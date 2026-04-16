@@ -415,54 +415,144 @@
    ========================================================= */
 
 #contato {
-  background-color: var(--texto-muted);
-  padding: 80px;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--cor-forte) 50%,
+    var(--fundo-card) 50%
+  );
+}
+
+/* Lado escuro — informações */
+.contato-lado-escuro {
+  background-color: var(--cor-forte);
+}
+
+/* Lado claro — formulário */
+.contato-lado-claro {
+  background-color: var(--fundo-card);
+}
+
+/* Padding interno — igual nos dois lados */
+.contato-conteudo-esquerdo {
+  padding: 60px 0;
+}
+
+.contato-conteudo-direito {
+  padding: 60px 40px;
 }
 
 .contato-titulo {
   font-family: var(--fonte-titulo);
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: var(--texto-claro);
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .contato-descricao {
-  font-size: 1.05rem;
-  color: var(--texto-escuro);
-  margin-bottom: 60px;
-  max-width: 480px;
+  font-size: 0.95rem;
+  color: var(--texto-muted);
+  margin-bottom: 40px;
+  line-height: 1.7;
 }
 
-.contato-formulario {
-  background-color: var(--fundo-suave);
-  padding: 80px;
-  border-radius: var(--raio-borda);
-}
-
-.formulario-titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 2rem;
-  color: var(--texto-escuro);
-  margin-bottom: 30px;
+/* Itens de contato (whatsapp, email, etc) */
+.contato-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 .contato-icone {
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(253, 240, 235, 0.15);
+  border-radius: var(--raio-borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-destaque);
+  flex-shrink: 0;
+}
+
+.contato-item-titulo {
+  display: block;
+  color: var(--texto-claro);
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.contato-item-detalhe {
+  display: block;
+  color: var(--texto-muted);
+  font-size: 0.85rem;
+}
+
+/* Formulário */
+.formulario-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  color: var(--texto-escuro);
+  margin-bottom: 28px;
+}
+
+/* Inputs — override Bootstrap para seguir a paleta */
+.contato-lado-claro .form-control,
+.contato-lado-claro .form-select {
+  border-color: var(--borda);
+  background-color: var(--fundo-branco);
+  color: var(--texto-escuro);
+  border-radius: var(--raio-btn);
+}
+
+.contato-lado-claro .form-control:focus,
+.contato-lado-claro .form-select:focus {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 0 3px rgba(192, 97, 74, 0.15);
+}
+
+.contato-lado-claro .form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--texto-escuro);
+  margin-bottom: 6px;
 }
 
 .btn-formulario {
-  background-color: var(--cor-destaque);
-  width: 200px;
+  background-color: var(--cor-forte);
   color: var(--fundo-branco) !important;
   border-radius: var(--raio-btn);
+  padding: 12px 28px;
   font-weight: 500;
-  margin-top: 30px;
+  font-size: 1rem;
   transition: background-color 0.2s ease;
+  border: none;
 }
 
 .btn-formulario:hover {
-  background-color: var(--cor-padrao);
+  background-color: var(--cor-destaque);
   color: var(--fundo-branco) !important;
+}
+
+/* Mobile — empilha lado escuro sobre formulário */
+@media (max-width: 767px) {
+  #contato {
+    background: linear-gradient(
+      to right,
+      var(--cor-forte) 50%,
+      var(--fundo-card) 50%
+    );
+  }
+
+  .contato-conteudo {
+    padding: 40px 24px;
+  }
+
+  .contato-titulo {
+    font-size: 1.8rem;
+  }
 }
