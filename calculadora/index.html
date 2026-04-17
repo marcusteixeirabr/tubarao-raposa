@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="calculadora.css" />
+  </head>
+
+  <!-- Fundo escuro para destacar a calculadora -->
+  <body class="bg-dark">
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center flex-column"
+    >
+      <!-- Corpo da calculadora -->
+      <div id="calculadora-corpo" class="p-4 shadow-lg">
+        <h5 class="titulo-calculadora text-center text-secondary mb-4">
+          Calculadora Simples
+        </h5>
+
+        <!-- Display -->
+        <div class="display-container mb-4">
+          <div id="display-texto">0</div>
+        </div>
+
+        <!-- Área dos botões -->
+        <div class="teclado-grid">
+          <!-- Linha 1  -->
+          <button class="btn-calc btn-func">AC</button>
+          <button class="btn-calc btn-func">+/-</button>
+          <button class="btn-calc btn-func">%</button>
+          <button class="btn-calc btn-op">÷</button>
+
+          <!-- Linha 2 -->
+          <button class="btn-calc">7</button>
+          <button class="btn-calc">8</button>
+          <button class="btn-calc">9</button>
+          <button class="btn-calc btn-operador">×</button>
+
+          <!-- Linha 3 -->
+          <button class="btn-calc">4</button>
+          <button class="btn-calc">5</button>
+          <button class="btn-calc">6</button>
+          <button class="btn-calc btn-operador">-</button>
+
+          <!-- Linha 4 -->
+          <button class="btn-calc">1</button>
+          <button class="btn-calc">2</button>
+          <button class="btn-calc">3</button>
+          <button class="btn-calc btn-operador">+</button>
+
+          <!-- Linha 5 -->
+          <button class="btn-calc btn-zero">0</button>
+          <button class="btn-calc">.</button>
+          <button class="btn-calc btn-igual">=</button>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Meu JS -->
+    <script src="calculadora.js"></script>
+  </body>
+</html>
