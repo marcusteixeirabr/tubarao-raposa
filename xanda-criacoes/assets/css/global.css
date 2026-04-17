@@ -111,6 +111,28 @@ main {
   background-color: var(--cor-whatsapp-hover);
 }
 
+/* Call to Action */
+
+#call-to-action {
+  padding: 80px 0;
+  background-color: var(--fundo-suave);
+  text-align: center;
+}
+
+.cta-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  color: var(--texto-escuro);
+  margin-bottom: 30px;
+}
+
+.cta-descricao {
+  font-size: 1.25rem;
+  color: var(--texto-medio);
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
 /* --- Footer --- */
 #footer {
   background-color: var(--cor-forte);
