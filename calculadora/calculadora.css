@@ -1,0 +1,89 @@
+@import url("https://googleapis.com");
+
+/* corpo da calculadora */
+#calculadora-corpo {
+  width: 350px; /* Tamanho fixo horizontal */
+  min-height: 500px; /* Tamanho fixo vertical mínimo */
+  background-color: #333; /* Cor do plástico da calculadora */
+  border-radius: 20px; /* Bordas arredondadas clássicas */
+  border: 4px solid #222; /* Um contorno para dar profundidade */
+}
+
+.titulo-calculadora {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+/* display da calculadora */
+.display-container {
+  background-color: #0b1a0e; /* Verde bem escuro (fundo da tela desligada) */
+  border: 5px solid #222; /* Moldura "cavada" no plástico */
+  border-top-color: #111; /* Sombra interna para dar profundidade */
+  border-left-color: #111;
+  padding: 15px;
+  border-radius: 8px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinha o número à direita */
+  box-shadow: inset 0 0 10px #000; /* Sombra interna */
+}
+
+#display-texto {
+  font-family: "VT323", monospace;
+  font-size: 3.5rem;
+  color: #26ff5e; /* Verde limão clássico */
+  text-shadow: 0 0 10px rgba(38, 255, 94, 0.7); /* Brilho de neon (Glow) */
+  overflow: hidden; /* Evita que números gigantes quebrem o layout */
+  letter-spacing: 2px;
+}
+
+/* Teclado da calculadora */
+.teclado-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+  gap: 12px; /* Espaçamento entre botões */
+}
+
+.btn-calc {
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  background: #444; /* Cor base do botão */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* Efeito 3D: Sombra embaixo simula altura */
+  box-shadow: 0 5px #222;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.btn-calc:active {
+  /* Efeito de clique: o botão "desce" */
+  box-shadow: 0 2px #111;
+  transform: translateY(3px);
+}
+
+/* Cores específicas para funções e operadores */
+.btn-operador {
+  background-color: #f39c12;
+  box-shadow: 0 5px #a06505;
+} /* Laranja */
+
+.btn-func {
+  background-color: #a5a5a5;
+  color: black;
+  box-shadow: 0 5px #777;
+} /* Cinza claro */
+
+.btn-igual {
+  background-color: #27ae60;
+  box-shadow: 0 5px #1e8449;
+} /* Verde */
+
+/* O botão Zero geralmente ocupa duas colunas */
+.btn-zero {
+  grid-column: span 2;
+}
