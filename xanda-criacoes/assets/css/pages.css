@@ -422,8 +422,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cor-destaque);
+  color: var(--texto-muted);
   flex-shrink: 0;
+}
+
+.contato-icone:hover {
+  color: var(--cor-destaque);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 .contato-item-titulo {
