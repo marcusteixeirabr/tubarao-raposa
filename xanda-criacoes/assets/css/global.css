@@ -6,7 +6,6 @@
 :root {
   /* --- Cores principais --- */
   --cor-forte: #2c1a1a; /* Navbar, Footer, textos sobre fundo claro */
-  --cor-extra: #2c1a1ad7; /* Navbar, Footer, textos sobre fundo claro */
   --cor-destaque: #c0614a; /* Botões CTA, destaques, hover */
   --cor-padrao: #a0522d; /* Links, títulos de seção, ícones */
   --cor-whatsapp: #25d366; /* Botão WhatsApp */
@@ -78,6 +77,38 @@ main {
 .btn-orcamento:hover {
   background-color: var(--cor-padrao);
   color: var(--fundo-branco) !important;
+}
+
+/* --- Breadcrumb --- */
+#breadcrumb {
+  background-color: var(--cor-forte);
+  padding: 0;
+}
+
+.breadcrumb-xanda .breadcrumb-item {
+  font-size: 0.9rem;
+}
+
+.breadcrumb-xanda .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--texto-muted); /* cor do divisor > */
+}
+
+.breadcrumb-xanda .breadcrumb-item.active {
+  color: var(--texto-claro);
+  font-weight: 500;
+}
+
+.breadcrumb-xanda .simple-link {
+  color: var(--texto-muted);
+}
+
+.breadcrumb-xanda .simple-link:hover {
+  color: var(--texto-claro);
+}
+
+.divisor-breadcrumb {
+  border-color: var(--cor-destaque) !important;
+  margin: 0;
 }
 
 /* --- Links simples --- */
