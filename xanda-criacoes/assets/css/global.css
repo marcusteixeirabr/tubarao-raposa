@@ -4,6 +4,7 @@
    ================================================ */
 
 :root {
+  color-scheme: light; /* ← indica que o design é otimizado para modo claro */
   /* --- Cores principais --- */
   --cor-forte: #2c1a1a; /* Navbar, Footer, textos sobre fundo claro */
   --cor-destaque: #c0614a; /* Botões CTA, destaques, hover */
