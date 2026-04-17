@@ -306,49 +306,23 @@
    XANDA CRIAÇÕES — Produtos
    ========================================================= */
 
-/* --- Breadcrumb --- */
-#breadcrumb {
-  background-color: var(--cor-extra);
-  padding: 12px 0;
-}
-
-.breadcrumb-xanda .breadcrumb-item {
-  font-size: 0.9rem;
-}
-
-.breadcrumb-xanda .breadcrumb-item + .breadcrumb-item::before {
-  color: var(--texto-muted); /* cor do divisor > */
-}
-
-.breadcrumb-xanda .breadcrumb-item.active {
-  color: var(--texto-claro);
-  font-weight: 500;
-}
-
-.breadcrumb-xanda .simple-link {
-  color: var(--texto-muted);
-}
-
-.breadcrumb-xanda .simple-link:hover {
-  color: var(--texto-claro);
-}
-
 /* Cabeçalho da página */
-#produtos-header {
-  background-color: var(--texto-muted);
+#produtos-header,
+#sobre-header {
+  background-color: var(--cor-forte);
   padding: 60px 0 40px;
 }
 
 .pagina-titulo {
   font-family: var(--fonte-titulo);
   font-size: 2.5rem;
-  color: var(--texto-escuro);
+  color: var(--texto-claro);
   margin-bottom: 12px;
 }
 
 .pagina-descricao {
   font-size: 1rem;
-  color: var(--texto-claro);
+  color: var(--texto-muted);
   max-width: 520px;
 }
 
@@ -412,11 +386,7 @@
 }
 
 /* Padding interno — igual nos dois lados */
-.contato-conteudo-esquerdo {
-  padding: 60px 0;
-}
-
-.contato-conteudo-direito {
+.contato-conteudo {
   padding: 60px 40px;
 }
 
@@ -522,13 +492,9 @@
   #contato {
     background: linear-gradient(
       to bottom,
-      var(--cor-forte) 45%,
-      var(--fundo-card) 45%
+      var(--cor-forte) 44%,
+      var(--fundo-card) 44%
     );
-  }
-
-  .contato-conteudo {
-    padding: 40px 24px;
   }
 
   .contato-titulo {
@@ -557,7 +523,7 @@
 
 .historia-titulo {
   font-family: var(--fonte-titulo);
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: var(--texto-claro);
   margin-bottom: 16px;
   margin-bottom: 20px;
@@ -579,16 +545,13 @@
 /* --- numeros --- */
 #numeros {
   background-color: var(--fundo-card);
+  padding: 0;
 }
 
 .numero-item {
   text-align: center;
-  border: 1px solid var(--texto-medio);
-  padding: 24px;
-  margin-top: 60px;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+  padding: 48px 24px;
+  border-right: 1px solid var(--borda);
 }
 
 .numero-item:last-child {
@@ -597,14 +560,25 @@
 
 .numero-valor {
   font-family: var(--fonte-titulo);
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 400;
   color: var(--cor-destaque);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  line-height: 1;
 }
 
 .numero-descricao {
   font-size: 0.9rem;
   color: var(--texto-muted);
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .numero-item {
+    border-right: none;
+    border-bottom: 1px solid var(--borda);
+    padding: 32px 16px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -627,26 +601,15 @@
   }
 }
 
-@media (max-width: 768px) {
-  #numeros {
-    padding: 30px 0 0 0;
-  }
-
-  .numero-item {
-    border: 1px solid var(--texto-medio);
-    border-radius: var(--raio-borda);
-    margin: 12px 0;
-  }
-
-  .numero-item:last-child {
-    border-right: 1px solid var(--texto-medio);
-  }
-}
-
 /* --- destaque --- */
 #destaque {
   background-color: var(--fundo-card);
-  padding: 80px 0;
+  padding: 35px 0;
+}
+
+.quem-somos,
+.valores {
+  padding: 25px;
 }
 
 .destaque-subtitulo {
