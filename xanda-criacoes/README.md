@@ -127,7 +127,7 @@ O acompanhamento das tarefas é feito via **Trello**:
 | Marcus Teixeira da Silva             | [@marcusteixeirabr](https://github.com/marcusteixeirabr) |
 | Natasha Caroline da Silva Pereira    | [@natashapereira](https://github.com/natashapereira)     |
 | Carlos Martins Espinoza Filho        | —                                                        |
-| Guilherme Bobany Tavares de Oliveira | —                                                        |
+| Guilherme Bobany Tavares de Oliveira | [@guilhermebobanytavares-cmyk](https://github.com/guilhermebobanytavares-cmyk)|
 
 > Projeto orientado pelo curso de ADS, Prof. Maurício Pasetto de Freitas, MSc — UNIVALI, Itajaí/SC.
 
