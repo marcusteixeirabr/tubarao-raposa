@@ -310,7 +310,7 @@
 #produtos-header,
 #sobre-header {
   background-color: var(--cor-forte);
-  padding: 60px 0 40px;
+  padding: 30px 0 40px;
 }
 
 .pagina-titulo {
@@ -360,6 +360,206 @@
 .divisor-produto {
   border-color: var(--borda);
   margin: 40px 0;
+}
+
+/* =========================================================
+   XANDA CRIAÇÕES — Produtos — Catálogo
+   ========================================================= */
+
+/* ── Filtros ── */
+.filter-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--fundo-suave);
+  border-bottom: 1px solid var(--borda);
+  padding: 0.9rem 0;
+}
+
+.filter-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texto-muted);
+}
+
+.filter-btn {
+  padding: 0.35rem 1rem;
+  border: 1.5px solid var(--borda);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--texto-medio);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--cor-destaque);
+  color: var(--cor-destaque);
+}
+
+.filter-btn.active {
+  background-color: var(--cor-forte);
+  color: var(--texto-claro);
+  border-color: var(--cor-forte);
+}
+
+.results-count {
+  font-size: 0.82rem;
+  color: var(--texto-muted);
+}
+
+/* ── Cards ── */
+.card-catalogo {
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-borda);
+  background-color: var(--fundo-branco);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-catalogo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(44, 26, 26, 0.1);
+}
+
+.card-catalogo.fade-in {
+  animation: cardIn 0.3s ease forwards;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-catalogo .card-img-top {
+  border-radius: var(--raio-borda) var(--raio-borda) 0 0;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, var(--fundo-suave) 60%, var(--borda));
+  border-radius: var(--raio-borda) var(--raio-borda) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+}
+
+.card-catalogo .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-catalogo .card-title {
+  font-family: var(--fonte-titulo);
+  font-size: 1rem;
+  color: var(--texto-escuro);
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+
+.card-catalogo .card-text {
+  font-size: 0.85rem;
+  color: var(--texto-medio);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.badge-mdf {
+  background-color: var(--fundo-suave);
+  color: var(--cor-padrao);
+  border: 1px solid var(--borda);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.badge-resina {
+  background-color: #e3f0f5;
+  color: #2a6a7a;
+  border: 1px solid #b8d9e4;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.badge-categoria {
+  background-color: var(--fundo-card);
+  color: var(--texto-muted);
+  border: 1px solid var(--borda);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.card-preco {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cor-destaque);
+  line-height: 1;
+}
+
+.card-preco small {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--texto-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.btn-orcamento-card {
+  background-color: var(--cor-destaque);
+  color: var(--texto-claro) !important;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.btn-orcamento-card:hover {
+  background-color: var(--cor-padrao);
+}
+
+/* col oculta pelo filtro */
+.product-col.hidden {
+  display: none;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--texto-muted);
+}
+
+.no-results.visible {
+  display: block;
 }
 
 /* =========================================================
@@ -513,7 +713,7 @@
 
 /* --- História --- */
 #historia {
-  padding: 60px 0;
+  padding: 30px 0 60px;
   background-color: var(--cor-forte);
 }
 
@@ -598,6 +798,7 @@
 
   .historia-imagem {
     margin-bottom: 32px;
+    padding: 0 16px;
   }
 
   /* Imagem aparece primeiro no mobile */
