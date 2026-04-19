@@ -713,7 +713,7 @@
 
 /* --- História --- */
 #historia {
-  padding: 30px 0 60px;
+  padding: 0 0 30px;
   background-color: var(--cor-forte);
 }
 
@@ -730,7 +730,6 @@
   font-family: var(--fonte-titulo);
   font-size: 2.5rem;
   color: var(--texto-claro);
-  margin-bottom: 16px;
   margin-bottom: 20px;
 }
 
@@ -744,7 +743,7 @@
 
 .historia-imagem {
   border-radius: var(--raio-borda);
-  width: 100%;
+  width: 85%;
 }
 
 /* --- numeros --- */
