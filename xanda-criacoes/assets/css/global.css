@@ -90,10 +90,7 @@ nav a.nav-disabled {
    Nav Active State — Xanda Criações
    ================================================ */
 nav a.nav-active {
-  color: var(
-    --color-primary,
-    var(--cor-destaque)
-  ); /* usa sua variável de cor ou fallback marrom */
+  color: var(--cor-destaque);
   font-weight: 600;
   position: relative;
 }
@@ -106,7 +103,7 @@ nav a.nav-active::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-primary, #b5651d);
+  background-color: var(--cor-destaque);
   border-radius: 2px;
   animation: navUnderlineIn 0.3s ease forwards;
 }
@@ -119,6 +116,12 @@ nav a.nav-active::after {
   to {
     width: 100%;
     opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  nav a.nav-active::after {
+    background-color: transparent; /* Remove o sublinhado no mobile para evitar confusão visual */
   }
 }
 
