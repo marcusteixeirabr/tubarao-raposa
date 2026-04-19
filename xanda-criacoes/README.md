@@ -135,9 +135,13 @@ O acompanhamento das tarefas é feito via **Trello**:
 ## 🤝 Sobre a Parceira
 
 **Priscila Alexandra da Silva Santos**
+
 Fundadora da Xanda Criações
+
 📱 WhatsApp: (47) 99268-0063
+
 📧 xandacriacoes065782@gmail.com
+
 📷 Instagram: [@xandacriacoes](https://instagram.com/xandacriacoes)
 
 ---
