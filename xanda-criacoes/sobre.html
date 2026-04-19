@@ -13,13 +13,13 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/img/icones/favicon-32x32.png"
+      href="assets/img/common/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="48x48"
-      href="assets/img/icones/favicon-48x48.png"
+      href="assets/img/common/favicon-48x48.png"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -39,7 +39,7 @@
           href="index.html"
         >
           <img
-            src="assets/img/logo.png"
+            src="assets/img/common/logo.png"
             alt="Xanda Criações"
             height="60"
           />Xanda Criações</a
@@ -114,7 +114,7 @@
             <!-- lado dirito - foto artesã -->
             <div class="col-12 col-lg-5">
               <img
-                src="assets/img/priscila.jpeg"
+                src="assets/img/sobre/produtora.jpeg"
                 alt="Criadora da marca Xanda Criações."
                 class="historia-imagem img-fluid"
               />
@@ -158,9 +158,9 @@
               <p class="destaque-subtitulo">Quem Somos</p>
               <h2 class="destaque-titulo">Quem está por trás das criações?</h2>
               <p class="destaque-descricao">
-                Priscila Alexandra da Silva Santos descobriu no artesanato em
-                MDF uma forma de unir criatividade e sustento familiar. Sua
-                paixão nasceu da necessidade e cresceu em dedicação.
+                Priscila Alexandra da Silva Santos descobriu no artesanato uma
+                forma de unir criatividade e sustento familiar. Sua paixão
+                nasceu da necessidade e cresceu em dedicação.
               </p>
               <p class="destaque-descricao">
                 Cada peça é feita com cuidado artesanal, pensada para refletir a
@@ -238,92 +238,108 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ═══════ FOOTER ═══════ -->
     <footer id="footer">
       <div class="container">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-          <div class="col">
-            <h5 class="footer-titulo">Xanda Criações</h5>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <p class="footer-titulo">Xanda Criações</p>
             <p class="footer-descricao">
-              Artesanato em MDF com carinho e criatividade para todos os
-              momentos.
+              Artesanato em MDF e resina artesanal, com carinho e criatividade
+              para todos os momentos.
             </p>
           </div>
+          <div class="col-6 col-md-2">
+            <p class="footer-titulo">Navegação</p>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="footer-link">Início</a></li>
+              <li><a href="produtos.html" class="footer-link">Produtos</a></li>
+              <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+              <li><a href="contato.html" class="footer-link">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <p class="footer-titulo">Produtos</p>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="produtos.html?filtro=organizar"
+                  class="footer-link"
+                  onclick="
+                    filterByTag('organizar');
+                    return false;
+                  "
+                  >Organizadores</a
+                >
+              </li>
 
-          <div class="col">
-            <h5 class="footer-titulo">Navegação</h5>
-            <p><a href="index.html" class="footer-link">Início</a></p>
-            <p><a href="produtos.html" class="footer-link">Produtos</a></p>
-            <p><a href="sobre.html" class="footer-link">Sobre</a></p>
-            <p><a href="contato.html" class="footer-link">Contato</a></p>
+              <li>
+                <a
+                  href="produtos.html?filtro=decorar"
+                  class="footer-link"
+                  onclick="
+                    filterByTag('decorar');
+                    return false;
+                  "
+                  >Decoração</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="produtos.html?filtro=presentear"
+                  class="footer-link"
+                  onclick="
+                    filterByTag('presentear');
+                    return false;
+                  "
+                  >Presentes</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="produtos.html?filtro=brincar"
+                  class="footer-link"
+                  onclick="
+                    filterByTag('brincar');
+                    return false;
+                  "
+                  >Brinquedos</a
+                >
+              </li>
+            </ul>
           </div>
 
-          <div class="col">
-            <h5 class="footer-titulo">Produtos</h5>
-            <p>
-              <a href="produtos.html#brinquedos" class="footer-link">
-                Quebra-cabeças</a
-              >
-            </p>
-            <p>
-              <a href="produtos.html#acessorios" class="footer-link">
-                Organizadores</a
-              >
-            </p>
-            <p>
-              <a href="produtos.html#acessorios" class="footer-link">
-                Chaveiros</a
-              >
-            </p>
-            <p>
-              <a href="produtos.html#utilidades" class="footer-link">
-                Luminárias</a
-              >
-            </p>
-            <p>
-              <a href="produtos.html#utilidades" class="footer-link">
-                Enfeites</a
-              >
-            </p>
-          </div>
-
-          <div class="col">
-            <h5 class="footer-titulo">Contato</h5>
-            <p>
-              <a
-                href="https://wa.me/5547992680063"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-link"
-                >WhatsApp</a
-              >
-            </p>
-            <p>
-              <a href="mailto:xandacriacoes065782@gmail.com" class="footer-link"
-                >E-mail</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://www.instagram.com/xandacriacoes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-link"
-                >Instagram</a
-              >
-            </p>
+          <div class="col-6 col-md-3">
+            <p class="footer-titulo">Contato</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://wa.me/5547992680063" class="footer-link"
+                  >WhatsApp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:xandacriacoes065782@gmail.com"
+                  class="footer-link"
+                  >E-mail</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/xandacriacoes/"
+                  class="footer-link"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-
-        <hr class="divisor-footer" />
-
-        <div class="row">
-          <div class="col">
-            <p class="footer-direitos">
-              © 2026 Xanda Criações. Todos os direitos reservados.
-            </p>
-          </div>
-        </div>
+        <div class="divisor-footer border-top"></div>
+        <p class="footer-direitos text-center">
+          © 2026 Xanda Criações. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
 
