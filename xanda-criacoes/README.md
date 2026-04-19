@@ -60,6 +60,7 @@ Os wireframes foram desenvolvidos no **Figma** em nível médio de fidelidade, c
 - **HTML5** — estrutura das páginas
 - **CSS3** — estilização e responsividade
 - **JavaScript** — interatividade
+- **Bootstrap 5** — framework CSS para layout e componentes
 - **Figma** — prototipação e wireframes
 - **Netlify** — hospedagem estática gratuita
 - **GitHub** — versionamento de código
