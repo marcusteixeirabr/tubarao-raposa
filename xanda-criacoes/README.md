@@ -125,7 +125,7 @@ O acompanhamento das tarefas é feito via **Trello**:
 | Nome                                 | GitHub / Contato                                         |
 | ------------------------------------ | -------------------------------------------------------- |
 | Marcus Teixeira da Silva             | [@marcusteixeirabr](https://github.com/marcusteixeirabr) |
-| Natasha Caroline da Silva Pereira    | —                                                        |
+| Natasha Caroline da Silva Pereira    | [@natashapereira](https://github.com/natashapereira)     |
 | Carlos Martins Espinoza Filho        | —                                                        |
 | Guilherme Bobany Tavares de Oliveira | —                                                        |
 
