@@ -15,6 +15,7 @@
   });
 })();
 
+(function scrollReveal() {
   /* Injeta o CSS de animação apenas uma vez */
   if (!document.getElementById("scroll-reveal-styles")) {
     const style = document.createElement("style");
