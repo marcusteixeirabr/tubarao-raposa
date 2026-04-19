@@ -1,3 +1,22 @@
+/* ================================================
+   catalog.js — Xanda Criações
+   Filtro interativo do catálogo de produtos
+   ================================================
+
+   COMO FUNCIONA:
+   - Cada .product-card tem um atributo data-tags
+     com uma ou mais palavras-chave separadas por espaço.
+     Ex: data-tags="resina organizar"
+
+   - Os botões .filter-btn têm data-filter com o valor
+     a ser filtrado (ou "all" para mostrar tudo).
+
+   - Ao clicar num botão, o script mostra apenas os cards
+     que contenham aquela tag, e esconde os demais.
+
+   - O contador de resultados é atualizado dinamicamente.
+   ================================================ */
+
 (function catalogFilter() {
   const grid = document.getElementById("catalog-grid");
   const cards = grid ? grid.querySelectorAll(".product-col") : [];
@@ -60,7 +79,9 @@
     });
   });
 
-  /* ── Função global para filtrar por tag ── */
+  /* ── Função global para filtrar por tag
+     (usada pelos links do footer e pelo link
+     "Ver todos os produtos" no no-results) ── */
   window.filterByTag = function (tag) {
     const target = document.querySelector(`[data-filter="${tag}"]`);
     if (target) {
@@ -81,4 +102,14 @@
 
   /* ── Inicializa o contador com todos os produtos ── */
   applyFilter("all");
+
+  /* ── Lê filtro da URL ao carregar a página
+   Ex: produtos.html?filtro=organizar       ── */
+  const params = new URLSearchParams(window.location.search);
+  const filtroURL = params.get("filtro");
+
+  if (filtroURL) {
+    const btn = document.querySelector(`[data-filter="${filtroURL}"]`);
+    if (btn) btn.click();
+  }
 })();
