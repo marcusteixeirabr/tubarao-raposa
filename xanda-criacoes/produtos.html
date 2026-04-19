@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xanda Criações — Produtos</title>
+    <meta
+      name="description"
+      content="Conheça a história da Xanda Criações, uma marca de artesanato em MDF e resina que une paixão, criatividade e cuidado em cada peça. Descubra quem está por trás das criações e os valores que guiam nosso trabalho artesanal."
+    />
+    <title>Xanda Criações — Sobre Nós</title>
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -56,10 +61,10 @@
               <a class="nav-link" href="index.html">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="produtos.html">Produtos</a>
+              <a class="nav-link" href="produtos.html">Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
+              <a class="nav-link active" href="sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contato.html">Contato</a>
@@ -86,613 +91,115 @@
               <li class="breadcrumb-item">
                 <a class="simple-link" href="index.html">Início</a>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Produtos
-              </li>
+              <li class="breadcrumb-item active" aria-current="page">Sobre</li>
             </ol>
           </nav>
         </div>
       </div>
 
-      <!-- Cabeçalho da página -->
-      <section id="produtos-header">
+      <!-- História -->
+      <section id="historia">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="pagina-titulo">Nossos Produtos</h1>
-              <p class="pagina-descricao">
-                Peças criadas em MDF e resina artesanal, com carinho e
-                personalização total. Cada produto é único — feito sob encomenda
-                do jeito que você imaginar
+          <div class="row align-items-center">
+            <!-- lado esquerdo - texto -->
+            <div class="col-12 col-lg-7">
+              <p class="historia-subtitulo">Nossa Jornada</p>
+              <h2 class="historia-titulo">Conheça a Xanda Criações</h2>
+              <p class="historia-descricao">
+                Uma marca nascida da paixão pelo artesanato e pelo cuidado com
+                cada detalhe. Aqui, cada peça conta uma história.
               </p>
+            </div>
+
+            <!-- lado dirito - foto artesã -->
+            <div class="col-12 col-lg-5">
+              <img
+                src="assets/img/sobre/produtora.jpeg"
+                alt="Criadora da marca Xanda Criações."
+                class="historia-imagem img-fluid"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ═══════ FILTROS ═══════ -->
-      <div class="filter-bar">
+      <section id="numeros">
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center gap-2">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <span class="filter-label ms-1">Material</span>
-            <button class="filter-btn" data-filter="mdf">MDF</button>
-            <button class="filter-btn" data-filter="resina">Resina</button>
-            <span class="filter-label ms-1">Categoria</span>
-            <button class="filter-btn" data-filter="organizar">
-              Organizar
-            </button>
-            <button class="filter-btn" data-filter="decorar">Decorar</button>
-            <button class="filter-btn" data-filter="presentear">
-              Presentear
-            </button>
-            <button class="filter-btn" data-filter="brincar">Brincar</button>
-            <span class="results-count ms-auto" id="results-count"></span>
+          <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-0">
+            <!-- coluna 1 -->
+            <div class="col numero-item">
+              <h2 class="numero-valor">500 +</h2>
+              <p class="numero-descricao">Peças produzidas</p>
+            </div>
+            <!-- coluna 2 -->
+            <div class="col numero-item">
+              <h2 class="numero-valor">200 +</h2>
+              <p class="numero-descricao">Clientes satisfeitos</p>
+            </div>
+            <!-- coluna 3 -->
+            <div class="col numero-item">
+              <h2 class="numero-valor">7 +</h2>
+              <p class="numero-descricao">Tipos de produtos</p>
+            </div>
+            <!-- coluna 4 -->
+            <div class="col numero-item">
+              <h2 class="numero-valor">100%</h2>
+              <p class="numero-descricao">Feito a mão</p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- ═══════ GRID ═══════ -->
-      <section id="produtos" class="py-5">
+      </section>
+      <!-- destaque -->
+      <section id="destaque">
         <div class="container">
-          <div class="row g-4" id="catalog-grid">
-            <!-- ORGANIZAR -->
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina organizar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/porta_joias.jpeg"
-                  alt="Porta-joias em resina"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Organizar</span>
-                  </div>
-                  <h2 class="card-title">Porta-joias em resina artesanal</h2>
-                  <p class="card-text">
-                    Moldado à mão com acabamento delicado. Perfeito para guardar
-                    anéis, brincos e colares com charme.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 35,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20porta-joias%20em%20resina"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
+          <div class="row">
+            <!-- quem somos -->
+            <div class="col-12 col-md-6 quem-somos">
+              <p class="destaque-subtitulo">Quem Somos</p>
+              <h2 class="destaque-titulo">Quem está por trás das criações?</h2>
+              <p class="destaque-descricao">
+                Priscila Alexandra da Silva Santos descobriu no artesanato uma
+                forma de unir criatividade e sustento familiar. Sua paixão
+                nasceu da necessidade e cresceu em dedicação.
+              </p>
+              <p class="destaque-descricao">
+                Cada peça é feita com cuidado artesanal, pensada para refletir a
+                personalidade do cliente. A personalização é o diferencial que
+                torna cada criação única e especial.
+              </p>
+              <p class="destaque-descricao">
+                Natural de Itajaí, Priscila alia experiência prática ao carinho
+                em cada detalhe. Sua trajetória mostra como o talento manual
+                pode transformar ideias em produtos significativos.
+              </p>
+              <p class="destaque-descricao">
+                Com mais de 500 peças produzidas e clientes satisfeitos, ela
+                mantém proximidade no atendimento, valorizando relações humanas
+                e entregando sempre qualidade e autenticidade em cada trabalho.
+              </p>
             </div>
 
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina organizar"
-            >
-              <div class="card-catalogo">
-                <div class="card-placeholder">💄</div>
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Organizar</span>
-                  </div>
-                  <h2 class="card-title">Porta-maquiagem em resina</h2>
-                  <p class="card-text">
-                    Organiza batons, pincéis e sombras com estilo. Feito sob
-                    medida para a sua bancada.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 40,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20porta-maquiagem"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf organizar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/porta_celular_1.png"
-                  alt="Porta-celular personalizado"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Organizar</span>
-                  </div>
-                  <h2 class="card-title">Porta-celular personalizado</h2>
-                  <p class="card-text">
-                    Em MDF cortado a laser ou resina artesanal. Escolha o
-                    material, a cor e o design.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 25,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20porta-celular"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina organizar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/porta_livro_1.jpeg"
-                  alt="Porta-livros em resina moldada"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Organizar</span>
-                  </div>
-                  <h2 class="card-title">Porta-livros em resina moldada</h2>
-                  <p class="card-text">
-                    Aparador de livros com personalidade. Formatos exclusivos
-                    feitos à mão sob encomenda.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 45,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20porta-livros"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- DECORAR -->
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf decorar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/luminaria_1.png"
-                  alt="Luminária em MDF"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Decorar</span>
-                  </div>
-                  <h2 class="card-title">Luminárias em MDF cortado a laser</h2>
-                  <p class="card-text">
-                    Luz e arte juntas. Recorte de precisão com design exclusivo
-                    para iluminar qualquer ambiente.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 60,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20luminária%20em%20MDF"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf decorar presentear"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/calendario.png"
-                  alt="Calendário em MDF"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Decorar</span>
-                    <span class="badge-categoria">Presentear</span>
-                  </div>
-                  <h2 class="card-title">Calendário em MDF</h2>
-                  <p class="card-text">
-                    Organize seus dias com estilo. Calendário perpétuo em MDF
-                    cortado a laser, personalizável com seu nome ou tema.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 60,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20calendário%20em%20MDF"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf decorar presentear"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/guirlanda.png"
-                  alt="Guirlanda em MDF"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Decorar</span>
-                    <span class="badge-categoria">Presentear</span>
-                  </div>
-                  <h2 class="card-title">Guirlandas artesanais em MDF</h2>
-                  <p class="card-text">
-                    Decoração para todas as estações. Personalizável com nome,
-                    data ou tema.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 30,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20guirlanda%20em%20MDF"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina decorar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/miniatura.jpeg"
-                  alt="Miniatura em Resina"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Decorar</span>
-                  </div>
-                  <h2 class="card-title">Miniaturas decorativas em resina</h2>
-                  <p class="card-text">
-                    Bichinhos, anjinhos, pessoinhas e mini profissionais. Cada
-                    peça modelada artesanalmente.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 15,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20miniatura%20em%20resina"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf decorar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/logo_1.jpeg"
-                  alt="Logo personalizado"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Decorar</span>
-                  </div>
-                  <h2 class="card-title">Logos decorativos sob encomenda</h2>
-                  <p class="card-text">
-                    Sua marca ou nome em MDF cortado a laser ou resina
-                    artesanal. Para home office, loja ou presente.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 50,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20logo%20personalizado"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf decorar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/enfeite_1.jpeg"
-                  alt="Mini móveis decorativos em MDF"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Decorar</span>
-                  </div>
-                  <h2 class="card-title">Mini móveis decorativos</h2>
-                  <p class="card-text">
-                    Miniaturas em MDF com precisão de laser. Para nicho, estante
-                    ou como presente especial.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 20,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20mini%20móveis"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- PRESENTEAR -->
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina presentear"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/chaveiros_2.jpeg"
-                  alt="Chaveiros em resina artesanal"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Presentear</span>
-                  </div>
-                  <h2 class="card-title">Chaveiros em resina artesanal</h2>
-                  <p class="card-text">
-                    Personalizados com nome, inicial, animal ou profissão.
-                    Ótimos para lembrancinhas.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 8,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20chaveiros%20em%20resina"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf presentear"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/lembrancinhas.png"
-                  alt="Lembrancinhas personalizadas"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Presentear</span>
-                  </div>
-                  <h2 class="card-title">Lembrancinhas personalizadas</h2>
-                  <p class="card-text">
-                    Para casamentos, aniversários, chás e formaturas. Em MDF ou
-                    resina, cada peça conta uma história.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 6,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20lembrancinhas"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina presentear"
-            >
-              <div class="card-catalogo">
-                <div class="card-placeholder">👩‍⚕️</div>
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Presentear</span>
-                  </div>
-                  <h2 class="card-title">Coleção Mini Profissionais</h2>
-                  <p class="card-text">
-                    Médicos, professores, cozinheiros e muito mais. O presente
-                    perfeito para quem ama sua profissão.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 18,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20coleção%20mini%20profissionais"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- BRINCAR -->
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="mdf brincar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/educativo_1.jpeg"
-                  alt="Quebra-cabeças em MDF"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-mdf">MDF</span>
-                    <span class="badge-categoria">Brincar</span>
-                  </div>
-                  <h2 class="card-title">Quebra-cabeças em MDF</h2>
-                  <p class="card-text">
-                    Recortados a laser com precisão milimétrica. Educativos,
-                    personalizados e perfeitos para presentear crianças.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 35,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20quebra-cabeças%20em%20MDF"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-6 col-md-4 col-lg-3 product-col"
-              data-tags="resina brincar"
-            >
-              <div class="card-catalogo">
-                <img
-                  src="assets/img/produtos/educativo_5.jpeg"
-                  alt="Jogos educativos em resina"
-                  class="card-img-top"
-                  loading="lazy"
-                />
-                <div class="card-body">
-                  <div class="d-flex flex-wrap gap-1 mb-2">
-                    <span class="badge-resina">Resina</span>
-                    <span class="badge-categoria">Brincar</span>
-                  </div>
-                  <h2 class="card-title">Jogos educativos em resina</h2>
-                  <p class="card-text">
-                    Memória, dominó e muito mais. Jogos personalizados para
-                    estimular a mente e divertir a criançada.
-                  </p>
-                  <div class="d-flex flex-column gap-2 mt-3">
-                    <div class="card-preco">
-                      <small>a partir de</small>R$ 35,00
-                    </div>
-                    <a
-                      href="https://wa.me/5547992680063?text=Quero%20encomendar%20jogos%20educativos%20em%20resina"
-                      class="btn-orcamento-card w-100 text-center"
-                      target="_blank"
-                      >Encomendar</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sem resultados -->
-            <div class="col-12">
-              <p class="no-results" id="no-results">
-                Nenhum produto encontrado para esse filtro.
-                <a
-                  href="#"
-                  class="simple-link"
-                  onclick="
-                    resetFilters();
-                    return false;
-                  "
-                  >Ver todos os produtos</a
-                >
+            <!-- valores -->
+            <div class="col-12 col-md-6 valores">
+              <p class="destaque-subtitulo">Nossos Valores</p>
+              <h2 class="destaque-titulo">O que nos guia</h2>
+              <p class="destaque-descricao destaque-caixa">
+                ► Personalização - cada peça é única
+              </p>
+              <p class="destaque-descricao destaque-caixa">
+                ► Qualidade - materiais e acabamento impecáveis
+              </p>
+              <p class="destaque-descricao destaque-caixa">
+                ► Carinho - atenção a cada detalhe
+              </p>
+              <p class="destaque-descricao destaque-caixa">
+                ► Criatividade - soluções fora do comum
+              </p>
+              <p class="destaque-descricao destaque-caixa">
+                ► Atendimento - próximo e humanizado
               </p>
             </div>
           </div>
-          <!-- /row -->
         </div>
       </section>
 
@@ -701,9 +208,10 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
-              <h2 class="cta-titulo">Gostou de algum produto?</h2>
+              <h2 class="cta-titulo">Vamos criar algo juntos?</h2>
               <p class="cta-descricao">
-                Entre em contato e solicite seu orçamento agora mesmo.
+                Entre em contato e veja como posso te ajudar a ter uma peça
+                única.
               </p>
               <a
                 href="https://wa.me/5547992680063?text=Quero%20um%20or%C3%A7amento%20gr%C3%A1tis"
@@ -841,6 +349,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/catalog.js"></script>
   </body>
 </html>
