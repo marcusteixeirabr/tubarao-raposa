@@ -39,19 +39,19 @@ Os wireframes foram desenvolvidos no **Figma** em nível médio de fidelidade, c
 
 ### Página Inicial
 
-![Wireframe - Página Inicial](docs/wireframe-home.png)
+<img src="docs/wireframe-home.png" width="300">
 
 ### Página de Produtos
 
-![Wireframe - Produtos](docs/wireframe-produtos.png)
+<img src="docs/wireframe-produtos.png" width="300">
 
 ### Página de Contato
 
-![Wireframe - Contato](docs/wireframe-contato.png)
+<img src="docs/wireframe-contato.png" width="300">
 
 ### Página Institucional (Sobre)
 
-![Wireframe - Sobre](docs/wireframe-sobre.png)
+<img src="docs/wireframe-sobre.png" width="300">
 
 ---
 
