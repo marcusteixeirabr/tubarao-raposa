@@ -228,83 +228,77 @@
             <div class="col-12 col-md-7 contato-lado-claro">
               <div class="contato-conteudo">
                 <h2 class="formulario-titulo">Envie uma mensagem</h2>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <input
-                    type="hidden"
-                    name="access_key"
-                    value="17563a91-e7a8-4f95-abb4-d5bf0da40f92"
-                  />
-                  <div class="row g-3">
-                    <div class="col-12 col-sm-6">
-                      <label for="nome" class="form-label">Nome *</label>
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control"
-                        id="nome"
-                        placeholder="Seu nome"
-                        required
-                      />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <label for="telefone" class="form-label"
-                        >WhatsApp / Telefone</label
-                      >
-                      <input
-                        type="text"
-                        name="phone"
-                        class="form-control"
-                        id="telefone"
-                        placeholder="(47) 9999-9999"
-                      />
-                    </div>
-                    <div class="col-12">
-                      <label for="email" class="form-label">E-mail *</label>
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="seu@email.com"
-                        required
-                      />
-                    </div>
-                    <div class="col-12">
-                      <label for="produto" class="form-label"
-                        >Produto de interesse</label
-                      >
-                      <select name="produto" class="form-select" id="produto">
-                        <option value="" selected>
-                          Selecione um produto...
-                        </option>
-                        <option value="logos">Logos em MDF</option>
-                        <option value="chaveiros">Brincos & Chaveiros</option>
-                        <option value="cofres">Cofres & Porta-Celular</option>
-                        <option value="lembrancinhas">Lembrancinhas</option>
-                        <option value="qrcode">QR Code em MDF</option>
-                        <option value="personalizado">
-                          Peça Personalizada
-                        </option>
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <label for="mensagem" class="form-label"
-                        >Mensagem *</label
-                      >
-                      <textarea
-                        name="message"
-                        class="form-control"
-                        id="mensagem"
-                        rows="5"
-                        placeholder="Descreva o que você precisa, quantidade, tamanho, etc."
-                        required
-                      ></textarea>
-                    </div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-formulario w-100">
-                        Enviar Mensagem →
-                      </button>
-                    </div>
+
+                <!-- Formulário -->
+                <form
+                  id="xanda-contato"
+                  name="xanda-contato"
+                  method="POST"
+                  data-netlify="true"
+                >
+                  <div class="col-12 col-sm-6">
+                    <label for="nome" class="form-label">Nome *</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="nome"
+                      placeholder="Seu nome"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <label for="telefone" class="form-label"
+                      >WhatsApp / Telefone</label
+                    >
+                    <input
+                      type="text"
+                      name="phone"
+                      class="form-control"
+                      id="telefone"
+                      placeholder="(47) 9999-9999"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label">E-mail *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="seu@email.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="produto" class="form-label"
+                      >Produto de interesse</label
+                    >
+                    <select name="produto" class="form-select" id="produto">
+                      <option value="" selected>Selecione um produto...</option>
+                      <option value="logos">Logos</option>
+                      <option value="chaveiros">Chaveiros</option>
+                      <option value="organizadores">Organizadores</option>
+                      <option value="lembrancinhas">Lembrancinhas</option>
+                      <option value="brinquedos">Brinquedos</option>
+                      <option value="personalizado">Peça Personalizada</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem *</label>
+                    <textarea
+                      name="message"
+                      class="form-control"
+                      id="mensagem"
+                      rows="5"
+                      placeholder="Descreva o que você precisa, quantidade, tamanho, etc."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-formulario w-100">
+                      Enviar Mensagem →
+                    </button>
                   </div>
                 </form>
               </div>
@@ -457,6 +451,8 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
   </body>
 </html>
